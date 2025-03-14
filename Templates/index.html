@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+<head>
+	<title>Face Attendance System</title>
+</head>
+<body>	
+	<!--<ul>
+		<li><a href="{{ url_for('add_face') }}">Add Face</a></li>
+		<li><a href="{{ url_for('take_attendance') }}">Take Attendance</a></li>
+		<li><a href="{{ url_for('download_attendance') }}">Download Attendance</a></li>
+	</ul>-->
+	<div class="topnav">
+		<h1>Face Attendance System</h1>
+		<a href="{{ url_for('add_face') }}">Register</a>
+		<a href="{{ url_for('take_attendance') }}">Take Attendance</a>
+		<a href="{{ url_for('download_attendance') }}">Download Attendance</a>
+
+		
+
+	</div>
+</body>
+</html>

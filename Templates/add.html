@@ -1,0 +1,52 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Face</title>
+</head>
+<body>
+	<h1>Add Face</h1>
+	<form method="POST" action="{{ url_for('add_face') }}">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<button type="submit">Add</button>
+	</form>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+    <link rel="stylesheet" href="/static/form.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Student Sign In</header>
+        <form action="{{ url_for('add_face') }}" method="POST" enctype="multipart/form-data" >
+          <input type="text"  name ="name"placeholder="name" required/>
+          <input type="text"  name = "student_id" placeholder="College ID" required />
+          <input type="text" name="division" placeholder= "division" required/>
+		  <input type="text" name="department" placeholder="department" required/>
+		  <input type="text" name="year" placeholder="year" required/>
+          <!--<div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>-->
+          <input type="submit" value="Add Student" /> 
+        </form>
+        <!--<form action="/encode" method="post">
+          <input type="submit" value="store encodings">
+        </form>
+        <form action="/capture" method="POST">
+          <input type="submit" value="Capture">
+        </form>-->
+
+      </div>
+      </div>
+      
